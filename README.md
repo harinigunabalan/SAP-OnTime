@@ -9,7 +9,7 @@
 Build a prototype of a mobile app which can help to increase productivity in SAP
 
 ####Short description of your application (bullet points)
-• Inform Colleagues (Meeting Organizer/All Meeting attendees), if running late
-• Inform Colleagues through outlook notification/phone call
-• Meeting message notifications could be sent
-• Schedual/Reschedual/Cancel meetings
+* Inform Colleagues (Meeting Organizer/All Meeting attendees), if running late.
+* Inform Colleagues through outlook notification/phone call
+* Meeting message notifications could be sent
+* Schedual/Reschedual/Cancel meetings
