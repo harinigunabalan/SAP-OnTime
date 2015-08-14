@@ -1,0 +1,28 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc"  xmlns:l="sap.ui.layout"
+	xmlns="sap.m" controllerName="test1.view.LateArrivalMsg" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+
+<Page title="LateArrivalMsg" showNavButton="true" navButtonPress="onNavBack">
+       <Button id="openMenu" icon="sap-icon://menu2" press="handlePressOpenMenu" />
+        <l:VerticalLayout class="sapUiContentPadding" width="100%">
+                                <l:content>            
+                                    <Label text="Enter your Late Arrival Message" width="100%" id="__label0" textAlign="Center"/>                    
+                                    <TextArea id="emailBody" width="100%" rows="9" textAlign="Left" value=" I will be approximately 10 minutes late for this meeting.                      
+            &#13;&#10; Sorry for any inconvenience caused." wrapping="Hard"/>           
+                                    <Button text="Send Outlook Notification" width="100%" height="100px" id="OutlookNotification" 
+                                    activeIcon="sap-icon://alert" textDirection="RTL" icon="sap-icon://alert"
+                                    press = "handleInformAllMembers"  />                 
+                                    
+                                </l:content></l:VerticalLayout>
+
+   <footer>
+              <Toolbar>
+                <ToolbarSpacer/>
+                  <Label text="SAP InnoJam, Aug 2015," />
+                  <Label text=" © Team7"/>
+                <ToolbarSpacer/>
+              </Toolbar>
+            </footer> 
+	</Page>
+</core:View>

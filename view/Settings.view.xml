@@ -1,0 +1,31 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" controllerName="test1.view.Settings" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+    <Page id="settingsPage" title="Settings" showNavButton="true" navButtonPress="onNavBack" >
+                    <core:HTML content='&lt;h2&gt;Informing Late Arrival Settings&lt;/h2&gt;' ></core:HTML>
+     
+          <InputListItem label="Manually inform Late Arrival">
+                        <RadioButton
+                            groupName='informSetting'
+                            selected='true' />
+          </InputListItem>
+          <InputListItem label='Automaticaly inform Late Arrival'>
+          <RadioButton
+               groupName='informSetting' />
+               </InputListItem>
+               <core:HTML content='&lt;h2&gt;Location Collection Settings&lt;/h2&gt;'></core:HTML>
+                    <InputListItem label="GPS">
+            <Switch state="true" pressed="handleSwitch" change="onPress"/>
+        </InputListItem>
+                <footer>
+              <Toolbar>
+                <ToolbarSpacer/>
+                  <Label text="SAP InnoJam, Aug 2015," />
+                  <Label text=" © Team7"/>
+                <ToolbarSpacer/>
+              </Toolbar>
+            </footer>
+      </Page>
+
+</core:View>

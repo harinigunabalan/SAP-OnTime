@@ -1,0 +1,43 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" controllerName="test1.view.InformMeetingOrganiser" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="InformMeetingOrganiser" showNavButton="true" navButtonPress="onNavBack">
+                                <content>
+            <Button id="openMenu" icon="sap-icon://menu2" press="handlePressOpenMenu" />                                
+            <TileContainer
+              id="container"
+              tileDelete="handleTileDelete">
+              <StandardTile
+                icon="sap-icon://notification-2"
+                type="{type}"
+                number="{number}"
+                numberUnit="{numberUnit}"
+                title="Send Outlook Notification"
+                info="{info}"
+                infoState="{infoState}" 
+                press="handleLateArrivalMsg"/>
+                
+                <StandardTile
+                icon="sap-icon://outgoing-call"
+                type="{type}"
+                number="{number}"
+                numberUnit="{numberUnit}"
+                title="Call Meeting Organiser"
+                info="{info}"
+                infoState="{infoState}"
+                press="handleTelPress"/>
+            </TileContainer>
+  </content>
+
+             <footer>
+              <Toolbar>
+                <ToolbarSpacer/>
+                  <Label text="SAP InnoJam, Aug 2015," />
+                  <Label text=" © Team7"/>
+                <ToolbarSpacer/>
+              </Toolbar>
+            </footer>
+          </Page>
+
+</core:View>

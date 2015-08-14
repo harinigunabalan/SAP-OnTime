@@ -1,0 +1,46 @@
+{
+  "run": [
+    {
+      "filePath": "/test2/localIndex.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "_metadata": {
+        "id": 7861039,
+        "runnerId": "webapprunner",
+        "displayName": "New Web Application"
+      }
+    },
+    {
+      "filePath": "/test1/Component.js",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "_metadata": {
+        "id": 2858888,
+        "runnerId": "fiorirunner",
+        "displayName": "New SAP Fiori Component on Sandbox",
+        "hasIssues": true
+      }
+    }
+  ]
+}

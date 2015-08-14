@@ -1,0 +1,43 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" controllerName="test1.view.notify" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Notify" id="notify" showNavButton = "true" navButtonPress="onNavBack">
+		<content>
+		    <Button id="openMenu" icon="sap-icon://menu2" press="handlePressOpenMenu" />
+    	<TileContainer
+          id="container"
+          tileDelete="handleTileDelete"
+          >
+              <StandardTile
+                icon="sap-icon://lateness"
+                type="{type}"
+                number="{number}"
+                numberUnit="{numberUnit}"
+                title="Inform Late Arrival"
+                info="{info}"
+                infoState="{infoState}" 
+                press="handleMenuItemInformLateArrival"/>
+            
+                <StandardTile
+                icon="sap-icon://notification"
+                type="{type}"
+                number="{number}"
+                numberUnit="{numberUnit}"
+                title="Send Meeting Notification"
+                info="{info}"
+                infoState="{infoState}" 
+                press="handleMenuItemSendMeetingNotification"/>
+            </TileContainer>
+        
+		</content>
+		  <footer>
+              <Toolbar>
+                <ToolbarSpacer/>
+                  <Label text="SAP InnoJam, Aug 2015," />
+                  <Label text=" © Team7"/>
+                <ToolbarSpacer/>
+              </Toolbar>
+            </footer>
+	</Page>
+</core:View>

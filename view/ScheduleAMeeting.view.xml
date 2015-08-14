@@ -1,0 +1,61 @@
+<core:View xmlns:core="sap.ui.core" 
+                xmlns:mvc="sap.ui.core.mvc" 
+                xmlns:l="sap.ui.layout"
+                xmlns="sap.m" controllerName="test1.view.ScheduleAMeeting" 
+                xmlns:html="http://www.w3.org/1999/xhtml">
+                <Page id="scheduleAMeeting" title="Schedule a Meeting" showNavButton="true" navButtonPress="onNavBack" >
+        
+         <Button id="openMenu" icon="sap-icon://menu2" press="handlePressOpenMenu" />
+        
+        <l:VerticalLayout
+            class="sapUiContentPadding"
+            width="100%">
+            <l:content>
+                <Button press="onPress" icon="sap-icon://citizen-connect" text="Choose Attendees ..." width="100%" class="sapUiSmallMarginBottom" />
+                <Label text="Time" />
+                <DateTimeInput
+                    type="Time"
+                    placeholder="Enter Time ..."
+                    class="sapUiSmallMarginBottom" />
+                <Label text="Location" />
+                <Input
+                    id="locationInput"
+                    type="Text"
+                    placeholder="Enter Location ..."
+                    showSuggestion="true"
+                    showValueHelp="true"
+                    valueHelpRequest="handleValueHelp"
+                    suggestionItems="{/ProductCollection}"
+                    class="sapUiSmallMarginBottom"
+                    press="handleSelectDialogPress" >
+                    <customData>
+                        <core:CustomData
+                            key="multi"
+                            value="true" />
+                    </customData>
+                    <suggestionItems>
+                        <core:Item text="{Name}" />
+                    </suggestionItems>
+                </Input>
+                <Label text="Subject" />
+                  <Input
+                    id="subject"
+                    type="Text"
+                    placeholder="Enter Meeting Subject ..." 
+                    class="sapUiSmallMarginBottom" >
+                  </Input>
+             </l:content>
+        </l:VerticalLayout>
+        
+        <Button press="onSchedule"  text="Schedule/Reschedule Meeting" width="100%" class="sapUiSmallMarginBottom" />
+        
+        	              <footer>
+              <Toolbar>
+                <ToolbarSpacer/>
+                  <Label text="SAP InnoJam, Aug 2015," />
+                  <Label text=" © Team7"/>
+                <ToolbarSpacer/>
+              </Toolbar>
+            </footer>
+                </Page>
+</core:View>

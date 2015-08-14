@@ -1,0 +1,57 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" controllerName="test1.view.InformColleagues" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="InformLateArrival" title="Inform Late Arrival" showNavButton="true" navButtonPress="onNavBack" >
+                                <content>
+            
+            <Button id="openMenu" icon="sap-icon://menu2" press="handlePressOpenMenu" />	
+  
+       <Label text="Upcoming Meeting" width="100%" id="__label2" textAlign="Center" design="Bold" /> 
+
+         <Label text="You may be late for the meeting: SAP HANA CLOUD." width="100%" id="__label0" textAlign="Center" design="Bold"/> 
+         <Label text="Would you like to inform your colleagues about it?" width="100%" id="__label1" textAlign="Center" design="Bold"/> 
+  
+<!-- <Text
+    class="sapUiExploredWarning sapUiSmallMarginBeginEnd sapUiSmallMarginTop"
+    textAlign="Center"
+    text="You may be late for the meeting: SAP HANA CLOUD. &#13;&#10; &#13;&#10; Would you like to inform your colleagues about it?" />-->
+            
+            <TileContainer
+              id="container"
+              tileDelete="handleTileDelete">
+              <StandardTile
+                icon="sap-icon://email"
+                type="{type}"
+                number="{number}"
+                numberUnit="{numberUnit}"
+                title="Inform Meeting Organiser"
+                info="{info}"
+                infoState="{infoState}" 
+                press="handleInformMeetingOrganiser"/>
+                
+                <StandardTile
+                icon="sap-icon://email"
+                type="{type}"
+                number="{number}"
+                numberUnit="{numberUnit}"
+                title="Inform All Meeting Members"
+                info="{info}"
+                infoState="{infoState}"
+                press = "handleInformNewAll"/>
+                
+                
+                
+            </TileContainer>
+         </content>
+            <footer>
+              <Toolbar>
+                <ToolbarSpacer/>
+                  <Label text="SAP InnoJam, Aug 2015," />
+                  <Label text=" © Team7"/>
+                <ToolbarSpacer/>
+              </Toolbar>
+            </footer>
+          </Page>
+
+</core:View>
