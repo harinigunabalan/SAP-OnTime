@@ -1,8 +1,5 @@
 {
 	"EmailIDs": [
-         "harini.gunabalan@sap.com", "george.mcnally@sap.com", "deirdre.commins@sap.com"
-    ],
-    "SecondArray":[
-        
-        ]
+         "test1@abc.com", "test2@abc.com", "test3@abc.com"
+    ]
 }
