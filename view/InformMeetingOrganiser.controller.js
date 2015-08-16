@@ -49,7 +49,7 @@ sap.ui.controller("test1.view.InformMeetingOrganiser", {
 	},
 
 	handleTelPress: function() {
-		sap.m.URLHelper.triggerTel("+4917641637817");
+		sap.m.URLHelper.triggerTel("Your phone number");
 	}
 
 });
