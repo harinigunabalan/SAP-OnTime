@@ -59,6 +59,6 @@ sap.ui.controller("test1.view.InformColleagues", {
         if(sBodyText === ""){
             sBodyText = " I will be approximately 10 minutes late for this meeting. Sorry for any inconvenience caused.";
         }
-	    sap.m.URLHelper.triggerEmail("harini.gunabalan@sap.com, george.mcnally@sap.com, deirdre.commins@sap.com", "SAP Innojam - Late Arrival Email Notification", sBodyText); 
+	    sap.m.URLHelper.triggerEmail("test1@abc.com, test2@abc.com, test3@abc.com", "SAP Innojam - Late Arrival Email Notification", sBodyText); 
 	}
 });
