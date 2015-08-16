@@ -56,7 +56,7 @@ sap.ui.controller("test1.view.sendMeetingNotification", {
             sBodyText = textField.getValue();
         }
         
-         sap.m.URLHelper.triggerEmail("harini.gunabalan@sap.com, george.mcnally@sap.com, deirdre.commins@sap.com", "SAP Innojam - Meeting Notification", sBodyText);
+         sap.m.URLHelper.triggerEmail("test1@abc.com, test2@abc.com, test3@abc.com", "SAP Innojam - Meeting Notification", sBodyText);
     }
 
 });
