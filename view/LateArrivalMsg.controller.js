@@ -52,7 +52,7 @@ sap.ui.controller("test1.view.LateArrivalMsg", {
             sBodyText = textField.getValue();
         }
 	    
-	   sap.m.URLHelper.triggerEmail("deirdre.commins@sap.com", "SAP Innojam - Late Arrival Email Notification", sBodyText); 
+	   sap.m.URLHelper.triggerEmail("test1@abc.com", "SAP Innojam - Late Arrival Email Notification", sBodyText); 
 	}
 
 });
